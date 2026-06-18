@@ -1,3 +1,13 @@
 *~
 *.swp
 .DS_Store
+.env
+.env.*
+*.pem
+*.key
+config.py
+zara_whatsapp_bot.py
+whatsapp_webhook.py
+*.log
+last_seen.json
+bot_output.log

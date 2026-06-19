@@ -526,14 +526,12 @@ def send_product_cards(phone, clean_text, raw_reply):
             name, price, sale_price, img_url, prod_url, dimensions = results[url]
             slug = url.rstrip("/").rsplit("/", 1)[-1]
             content_id = slug_to_content_id.get(slug)
-            if content_id and META_ACCESS_TOKEN:
-                cards.append(("catalog", content_id, name, prod_url))
+            # Skip catalog cards (catalog not connected) — always use text/image
+            card_text = build_card_text(name, price, sale_price, prod_url, dimensions)
+            if img_url and META_ACCESS_TOKEN:
+                cards.append(("image", img_url, card_text))
             else:
-                card_text = build_card_text(name, price, sale_price, prod_url, dimensions)
-                if img_url and META_ACCESS_TOKEN:
-                    cards.append(("image", img_url, card_text))
-                else:
-                    cards.append(("text", card_text, None))
+                cards.append(("text", card_text, None))
         else:
             cards.append(("text", line_text, None))
 

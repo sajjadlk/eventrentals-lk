@@ -1,4 +1,4 @@
-# Zara Instructions Backup — 20260617_040312
+# Zara Instructions Backup — 20260619_000355
 
 
 
@@ -67,7 +67,7 @@ Bars:
   • Elegant White Round Bar — Rs.75000 — <a href="https://eventrentals.lk/product/elegant-white-round-bar/" target="_blank">View</a>
   • Exclusive Deal! Bars and Bar Theme Offer for Drunken Lankan — <a href="https://eventrentals.lk/product/exclusive-deal-bars-and-bar-theme-offer-for-drunken-lankan/" target="_blank">View</a>
   • Glitzy Glamorous Gold Bar (1 available) — 📐 144" × 72" × 42" (12ft × 6ft × 3.5ft) — Rs.125000 — <a href="https://eventrentals.lk/product/glitzy-glamorous-gold-bar/" target="_blank">View</a>
-  • Round Wooden Bar — 📐 720" × 216" × 48" (60ft × 18ft × 4ft) — Rs.45000 — <a href="https://eventrentals.lk/product/round-wooden-bar/" target="_blank">View</a>
+  • Round Wooden Bar — 📐 720" × 216" × 42" (60ft × 18ft × 3.5ft) — Rs.45000 — <a href="https://eventrentals.lk/product/round-wooden-bar/" target="_blank">View</a>
   • Rustic Cart – Food Station, Charcuterie &amp; Bar Cart for Events — Rs.10000 — <a href="https://eventrentals.lk/product/mobile-stall-cart/" target="_blank">View</a>
   • Shot Wall — 📐 48" × 96" (4ft × 8ft) — Rs.20000 — <a href="https://eventrentals.lk/product/shot-wall/" target="_blank">View</a>
   • Stunning Jade Green Round Bar (1 available) — Rs.75000 — <a href="https://eventrentals.lk/product/stunning-jade-green-round-bar/" target="_blank">View</a>
@@ -287,6 +287,7 @@ Linen (Tablecloths, Napkins, Drapes):
   • Stretch Tablecloth — Rs.1000 — <a href="https://eventrentals.lk/product/stretch-tablecloth/" target="_blank">View</a>
   • Tablecloth — Rs.3000 — <a href="https://eventrentals.lk/product/tablecloth/" target="_blank">View</a>
   • Tablecloth - Linen (Amu Redi) — Rs.3000 — <a href="https://eventrentals.lk/product/tablecloth-linen-amu-redi/" target="_blank">View</a>
+  • Tablecloth - Off White — Rs.2000 — <a href="https://eventrentals.lk/product/tablecloth-off-white/" target="_blank">View</a>
   • Tablecloth - Sequined Rose Gold — Rs.2750 — <a href="https://eventrentals.lk/product/tablecloth-sequined-rose-gold/" target="_blank">View</a>
   • Tablecloth - White Velvet — Rs.2750 — <a href="https://eventrentals.lk/product/tablecloth-white-velvet/" target="_blank">View</a>
   • Velvet Tablecloth - Emerald Green — Rs.3000 — <a href="https://eventrentals.lk/product/velvet-tablecloth-emerald-green/" target="_blank">View</a>

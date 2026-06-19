@@ -769,16 +769,26 @@ def poll():
                         {"role": "system", "content": ZARA_INSTRUCTIONS + whatsapp_rules}
                     ]
 
-                # Check if this is a chairs/seating query — to promote the featured product
+                # Check if this is a chairs/seating or tables query — to promote featured products
                 is_chair_query = bool(re.search(r'\b(chairs?|seating|seats|sitting)\b', msg_text, re.IGNORECASE))
+                is_table_query = bool(re.search(r'\b(tables?|dining)\b', msg_text, re.IGNORECASE))
 
-                # For chairs/seating queries, inject a strong prompt to promote Cross Back Chairs Dark Tan first
+                # Inject a strong prompt for featured products and exclusions
                 user_prompt = msg_text
                 if msg_text and is_chair_query:
                     user_prompt = (
                         "IMPORTANT: You MUST list **Cross Back Chairs Dark Tan** FIRST as the featured option. "
                         "It is Rs.350 (on offer) - https://eventrentals.lk/product/cross-back-chairs-dark-tan/\n\n"
                         "Then list the other seating products.\n\n"
+                        "DO NOT include Cooler Fans, Mirrors, or other non-seating items.\n\n"
+                        f"Customer: {msg_text}"
+                    )
+                elif msg_text and is_table_query:
+                    user_prompt = (
+                        "IMPORTANT: You MUST list **Barn Table** FIRST as the featured table option. "
+                        "It is Rs.3000 (on offer) - https://eventrentals.lk/product/barn-table/\n\n"
+                        "Then list the other table options.\n\n"
+                        "DO NOT include Cooler Fans, Mirrors, or other non-table items.\n\n"
                         f"Customer: {msg_text}"
                     )
                 else:
@@ -798,12 +808,17 @@ def poll():
                 conversations[phone].append({"role": "assistant", "content": reply})
 
                 # Send product cards or plain text
-                # For chairs/seating queries, auto-send Cross Back Chairs Dark Tan as the promoted first item
+                # Auto-send promoted products based on query type
+                promo_slug = None
                 if is_chair_query:
-                    promo = lookup_product("cross-back-chairs-dark-tan")
+                    promo_slug = "cross-back-chairs-dark-tan"
+                elif is_table_query:
+                    promo_slug = "barn-table"
+
+                if promo_slug:
+                    promo = lookup_product(promo_slug)
                     if promo:
-                        promo_url = promo.get("permalink", "https://eventrentals.lk/product/cross-back-chairs-dark-tan/")
-                        # Skip if already sent in this conversation
+                        promo_url = promo.get("permalink", f"https://eventrentals.lk/product/{promo_slug}/")
                         phone_sent = products_sent.get(phone, set())
                         if promo_url not in phone_sent:
                             promo_card = build_card_text(
@@ -811,7 +826,6 @@ def poll():
                                 promo_url, promo.get("dimensions", {})
                             )
                             send_text(phone, promo_card)
-                            # Track as sent so no duplicate from Zara's response
                             if phone not in products_sent:
                                 products_sent[phone] = set()
                             products_sent[phone].add(promo_url)

@@ -751,7 +751,8 @@ def poll():
                         "  Example: • Barn Table — Rs.4000 (On Offer: Rs.3000) — https://eventrentals.lk/product/barn-table/\n"
                         "- **CRITICAL: Put the product URL on the SAME line as the product name, not on a separate line below it.**\n"
                         "- **CRITICAL: Only recommend products with a working eventrentals.lk URL**\n"
-                        "- **CATEGORY MAPPINGS (IMPORTANT):** When a customer asks about **chairs**, show ALL products from the **Seating** section. Include chairs, bean bags, cushions, low tables, divans, bride and groom chairs. Same for **seating**, **seats**, **sitting**.\n"
+                        "- **PROMOTED PRODUCT (IMPORTANT):** When a customer asks about **chairs** or **seating**, ALWAYS list **Cross Back Chairs Dark Tan** FIRST as the featured option (Rs.350 on offer). Then list the other seating products.\n"
+                        "- **CATEGORY MAPPINGS:** chairs/seating/seats/sitting → ALL products from the **Seating** section (chairs, bean bags, cushions, low tables, divans, bride and groom chairs).\n"
                         "- Ask about event type, date, and guest count to tailor recommendations\n"
                         "- Keep responses concise but helpful — suggest alternatives and upgrades\n"
                         '- **PRODUCT ENQUIRY FLOW:** When a customer sends a product link/name, do NOT ask for their name, phone number, or event date in your FIRST response. First acknowledge the product with price + one useful detail. If the product shows "(1 available)" in the listing, do NOT ask "how many" — just ask for their event date. If no "(1 available)" note, ask how many they need and their event date.\n'

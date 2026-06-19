@@ -1,4 +1,4 @@
-# Zara Instructions Backup — 20260617_040815
+# Zara Instructions Backup — 20260619_060056
 
 
 
@@ -287,6 +287,7 @@ Linen (Tablecloths, Napkins, Drapes):
   • Stretch Tablecloth — Rs.1000 — <a href="https://eventrentals.lk/product/stretch-tablecloth/" target="_blank">View</a>
   • Tablecloth — Rs.3000 — <a href="https://eventrentals.lk/product/tablecloth/" target="_blank">View</a>
   • Tablecloth - Linen (Amu Redi) — Rs.3000 — <a href="https://eventrentals.lk/product/tablecloth-linen-amu-redi/" target="_blank">View</a>
+  • Tablecloth - Off White — Rs.2000 — <a href="https://eventrentals.lk/product/tablecloth-off-white/" target="_blank">View</a>
   • Tablecloth - Sequined Rose Gold — Rs.2750 — <a href="https://eventrentals.lk/product/tablecloth-sequined-rose-gold/" target="_blank">View</a>
   • Tablecloth - White Velvet — Rs.2750 — <a href="https://eventrentals.lk/product/tablecloth-white-velvet/" target="_blank">View</a>
   • Velvet Tablecloth - Emerald Green — Rs.3000 — <a href="https://eventrentals.lk/product/velvet-tablecloth-emerald-green/" target="_blank">View</a>

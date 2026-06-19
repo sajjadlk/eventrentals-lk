@@ -769,7 +769,22 @@ def poll():
                         {"role": "system", "content": ZARA_INSTRUCTIONS + whatsapp_rules}
                     ]
 
-                conversations[phone].append({"role": "user", "content": msg_text})
+                # Check if this is a chairs/seating query — to promote the featured product
+                is_chair_query = bool(re.search(r'\b(chairs?|seating|seats|sitting)\b', msg_text, re.IGNORECASE))
+
+                # For chairs/seating queries, inject a strong prompt to promote Cross Back Chairs Dark Tan first
+                user_prompt = msg_text
+                if msg_text and is_chair_query:
+                    user_prompt = (
+                        "IMPORTANT: You MUST list **Cross Back Chairs Dark Tan** FIRST as the featured option. "
+                        "It is Rs.350 (on offer) - https://eventrentals.lk/product/cross-back-chairs-dark-tan/\n\n"
+                        "Then list the other seating products.\n\n"
+                        f"Customer: {msg_text}"
+                    )
+                else:
+                    user_prompt = msg_text
+
+                conversations[phone].append({"role": "user", "content": user_prompt})
                 conversations[phone] = conversations[phone][-21:]
 
                 reply = call_zara(conversations[phone])

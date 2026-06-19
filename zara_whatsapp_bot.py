@@ -798,6 +798,23 @@ def poll():
                 conversations[phone].append({"role": "assistant", "content": reply})
 
                 # Send product cards or plain text
+                # For chairs/seating queries, auto-send Cross Back Chairs Dark Tan as the promoted first item
+                if is_chair_query:
+                    promo = lookup_product("cross-back-chairs-dark-tan")
+                    if promo:
+                        promo_url = promo.get("permalink", "https://eventrentals.lk/product/cross-back-chairs-dark-tan/")
+                        # Skip if already sent in this conversation
+                        phone_sent = products_sent.get(phone, set())
+                        if promo_url not in phone_sent:
+                            promo_card = build_card_text(
+                                promo["name"], promo["price"], promo["sale_price"],
+                                promo_url, promo.get("dimensions", {})
+                            )
+                            send_text(phone, promo_card)
+                            # Track as sent so no duplicate from Zara's response
+                            if phone not in products_sent:
+                                products_sent[phone] = set()
+                            products_sent[phone].add(promo_url)
                 send_product_cards(phone, clean, reply)
 
                 # Check if Zara has completed a lead capture / handoff

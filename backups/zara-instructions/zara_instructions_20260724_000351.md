@@ -1,4 +1,4 @@
-# Zara Instructions Backup — 20260722_000443
+# Zara Instructions Backup — 20260724_000351
 
 # Zara Instructions
 
@@ -67,6 +67,7 @@ Tables:
   • Cocktail Tables — Rs.2500
   • Kids Party Table — Rs.2500
   • Low Seating Tables — 📐 48" × 24" × 12" (4ft × 2ft × 1ft) — Rs.500
+  • Table Risers — Rs.500
   • Standard Tables — Rs.750
 
 Bars:
@@ -145,6 +146,7 @@ Tableware (Plates, Cutlery, Bowls):
   • Starter Fork — Rs.30
   • Starter Knife — Rs.30
   • Stylish Highball Glasses - Elevate Your Drinking Experience — Rs.75
+  • Table Risers — Rs.500
   • Tea Spoon — Rs.30
   • Whiskey Glasses — Rs.60
   • Wood Platters 7" — 📐 7" × 7" × 1" (0.6ft × 0.6ft × 0.1ft) — Rs.250
